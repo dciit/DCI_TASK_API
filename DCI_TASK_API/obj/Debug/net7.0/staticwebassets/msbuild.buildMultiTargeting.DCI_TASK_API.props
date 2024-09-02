@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DCI_TASK_API.props" />
+</Project>

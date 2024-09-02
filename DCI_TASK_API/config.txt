@@ -1,0 +1,11 @@
+Scaffold-DbContext "Server=192.168.226.86;Database=dbSCM;TrustServerCertificate=True;uid=sa;password=decjapan" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force -t  DCI_TASK -Context DBSCM  -ContextDir "Contexts"
+
+// DBHRM 
+Scaffold-DbContext "Server=192.168.226.86;Database=dbHRM;TrustServerCertificate=True;uid=sa;password=decjapan" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force -t  Employee -Context DBHRM  -ContextDir "Contexts"
+
+// DBDCI COSTY
+Scaffold-DbContext "Server=192.168.226.145;Database=dbDCI;TrustServerCertificate=True;uid=sa;password=decjapan" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force -t  Employee,LNS_Equipment,LNS_Equipment_Check_Log,LNS_Equipment_MASTER,LNS_Layout,TR_Line_Process,vi_TR_trainess_log,PD_Backflush_Data -Context DBDCI  -ContextDir "Contexts"
+
+// COSTY DBIOT
+Scaffold-DbContext "Server=COSTY;Database=dbIoT;TrustServerCertificate=True;uid=sa;password=decjapan" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force -t  SCR_GasTight -Context COSTYIOT  -ContextDir "Contexts"
+
